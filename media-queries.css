@@ -1,0 +1,126 @@
+
+/* Medai  */
+@media screen and (max-width:992px){
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-links{
+        position: absolute;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_Xo6UQL12Pg0RKXTWsJaujw52Aqr1yoKGPMTp-GuW_ZPzDE&s);
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.5s ease-in-out;
+        background-size: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .main-nav{
+        overflow: initial;
+    }
+    
+    .examples-area{
+        gap: 20px;
+    }
+    
+    .examples-card{
+        width: calc(50% - 10px);
+        height: 200px;
+    }
+
+
+    .cta-section{
+        padding-block: 80px;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+}
+
+/* Second break points */
+
+@media screen and (max-width: 767px) {
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+
+    }
+
+    .header-left h1{
+        margin-bottom:10px;
+    }
+
+    .pri-botton{
+        width: 100%;
+    } 
+
+    .features-card{
+        max-width: calc(50% - 10px);
+    }
+
+    .big-feature-container{
+        flex-direction: column;
+    }
+    #second-big-feature-container{
+        flex-direction: column-reverse;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .link-column{
+        align-items: stretch;
+        gap: 10px;
+    }
+} 
+
+/* Mobile view */
+@media screen  and (max-width: 479px){
+    :root { 
+        --padding-inline-section: 10px;
+    }
+
+    h1{
+        font-size: 2rem;
+    
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+   
+    p{
+        font-size: 1rem;
+    }
+
+    .features-card{
+        max-width: 100%;
+    }
+
+    .examples-card{
+        width: 100%;
+        height: 150px;
+    }
+}
+
